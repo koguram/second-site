@@ -641,3 +641,8 @@ body {
     justify-self: flex-start;
   }
 }
+
+.fade-on-scroll {
+  transition: opacity 0.3s ease;
+  will-change: opacity;
+}
