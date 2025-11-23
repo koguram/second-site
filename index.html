@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>こぐらむ</title>
+  <title>KOGURA LAB – Hyper Gnon Site</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,38 +16,244 @@
     <div class="blob blob-5"></div>
   </div>
 
-  <!-- コンテンツ -->
-  <div class="content">
-    <header>
-      <div class="logo">kogram LAB</div>
-      <div class="tagline">AI / LLM / Landscape & Live-kids Vibes</div>
-    </header>
+  <!-- ヘッダー / ナビ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-main">KOGURA LAB</span>
+        <span class="brand-sub">HYPER GNON SITE</span>
+      </a>
+      <nav class="main-nav">
+        <a href="#news">NEWS</a>
+        <a href="#live">LIVE</a>
+        <a href="#discography">DISCOGRAPHY</a>
+        <a href="#profile">PROFILE</a>
+        <a href="#movie">MOVIE</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
 
+  <!-- ページ全体（3Dチルト用ラッパ） -->
+  <div class="page">
     <main>
-      <section class="hero-card">
-        <div class="hero-title">
-          写真家＋理系ライブキッズ
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero-overlay"></div>
+        <div class="hero-inner">
+          <p class="hero-kicker">EXPERIMENTAL WEB / LLM / LANDSCAPE VIBES</p>
+          <h1 class="hero-title">
+            常にぐにょぐにょ動き続ける、<br />
+            こくらくんの実験ポータル。
+          </h1>
+          <p class="hero-text">
+            ハンブレのオフィシャルサイト風レイアウトに、<br />
+            ネオンぐにょぐにょ背景をミックスした、個人ラボサイトのベース。
+          </p>
+          <div class="hero-actions">
+            <a href="#news" class="btn primary">NEWS</a>
+            <a href="#live" class="btn ghost">LIVE</a>
+          </div>
         </div>
-        <div class="hero-subtitle">
-          めっちゃ動くよ！！
+        <div class="hero-scroll">
+          <span>SCROLL</span>
+          <div class="hero-scroll-line"></div>
         </div>
+      </section>
 
-        <div class="chips">
-          <span class="chip">AI / LLM</span>
-          <span class="chip">旅日記写真</span>
-          <span class="chip">ライブ</span>
-          <span class="chip">一人旅ドライブ</span>
-          <span class="chip">Hyper Motion</span>
+      <!-- NEWS -->
+      <section class="section" id="news">
+        <div class="section-header">
+          <h2 class="section-title">NEWS</h2>
+          <button class="section-cta">VIEW ALL</button>
         </div>
+        <div class="news-list">
+          <article class="news-item">
+            <div class="news-meta">
+              <span class="news-tag">INFO</span>
+              <span class="news-date">2025.11.23</span>
+            </div>
+            <h3 class="news-title">ここにお知らせタイトルが入ります（あとで差し替え）</h3>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">
+              <span class="news-tag">LIVE</span>
+              <span class="news-date">2025.11.30</span>
+            </div>
+            <h3 class="news-title">ライブ・イベント情報のダミーテキスト</h3>
+          </article>
+          <article class="news-item">
+            <div class="news-meta">
+              <span class="news-tag">RELEASE</span>
+              <span class="news-date">2025.12.05</span>
+            </div>
+            <h3 class="news-title">作品リリース情報のダミーテキスト</h3>
+          </article>
+        </div>
+      </section>
 
-        <p class="small">
-          背景ブロブ5つ＋CSSアニメーション＋JavaScriptパララックスで、
-          サイト全体が常に“呼吸してる”みたいに動き続けます。
-        </p>
+      <!-- LIVE -->
+      <section class="section" id="live">
+        <div class="section-header">
+          <h2 class="section-title">LIVE</h2>
+          <button class="section-cta">VIEW ALL</button>
+        </div>
+        <div class="live-list">
+          <div class="live-item">
+            <div class="live-date">
+              <span class="live-year">2026</span>
+              <span class="live-day">0113</span>
+              <span class="live-weekday">SAT</span>
+            </div>
+            <div class="live-info">
+              <p class="live-place">TOKYO</p>
+              <p class="live-venue">Shibuya ダミーホール</p>
+              <p class="live-detail">OPEN 17:00 / START 18:00</p>
+            </div>
+            <button class="btn live-btn">TICKET</button>
+          </div>
+
+          <div class="live-item">
+            <div class="live-date">
+              <span class="live-year">2026</span>
+              <span class="live-day">0120</span>
+              <span class="live-weekday">SUN</span>
+            </div>
+            <div class="live-info">
+              <p class="live-place">OSAKA</p>
+              <p class="live-venue">Umeda ダミークラブ</p>
+              <p class="live-detail">OPEN 16:30 / START 17:30</p>
+            </div>
+            <button class="btn live-btn">TICKET</button>
+          </div>
+
+          <div class="live-item">
+            <div class="live-date">
+              <span class="live-year">2026</span>
+              <span class="live-day">0202</span>
+              <span class="live-weekday">SUN</span>
+            </div>
+            <div class="live-info">
+              <p class="live-place">ONLINE</p>
+              <p class="live-venue">Streaming Live</p>
+              <p class="live-detail">START 20:00</p>
+            </div>
+            <button class="btn live-btn">DETAIL</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- DISCOGRAPHY -->
+      <section class="section" id="discography">
+        <div class="section-header">
+          <h2 class="section-title">DISCOGRAPHY</h2>
+          <button class="section-cta">VIEW ALL</button>
+        </div>
+        <div class="disco-grid">
+          <article class="disco-card">
+            <div class="disco-cover">
+              <img src="https://images.unsplash.com/photo-1518976024611-28bf4b48222e?auto=format&fit=crop&w=800&q=80" alt="Dummy Release 1" />
+            </div>
+            <div class="disco-info">
+              <p class="disco-type">ALBUM</p>
+              <h3 class="disco-title">Dummy Release 01</h3>
+            </div>
+          </article>
+          <article class="disco-card">
+            <div class="disco-cover">
+              <img src="https://images.unsplash.com/photo-1512427691650-1e0c2f9a81b3?auto=format&fit=crop&w=800&q=80" alt="Dummy Release 2" />
+            </div>
+            <div class="disco-info">
+              <p class="disco-type">EP</p>
+              <h3 class="disco-title">Dummy Release 02</h3>
+            </div>
+          </article>
+          <article class="disco-card">
+            <div class="disco-cover">
+              <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80" alt="Dummy Release 3" />
+            </div>
+            <div class="disco-info">
+              <p class="disco-type">SINGLE</p>
+              <h3 class="disco-title">Dummy Release 03</h3>
+            </div>
+          </article>
+          <article class="disco-card">
+            <div class="disco-cover">
+              <img src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&w=800&q=80" alt="Dummy Release 4" />
+            </div>
+            <div class="disco-info">
+              <p class="disco-type">DIGITAL</p>
+              <h3 class="disco-title">Dummy Release 04</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section class="section" id="profile">
+        <div class="section-header">
+          <h2 class="section-title">PROFILE</h2>
+          <button class="section-cta">VIEW MORE</button>
+        </div>
+        <div class="profile-layout">
+          <div class="profile-photo">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Profile dummy" />
+          </div>
+          <div class="profile-text">
+            <p class="profile-lead">
+              ここにこくらくんのプロフィールテキストを入れられるようにしておくゾーン。
+            </p>
+            <p class="profile-body">
+              後でLLM研究・Web制作・写真・ライブキッズ活動など、
+              好きなようにガッツリ書いてOK。今はダミー文なので、構成だけイメージできればOK。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MOVIE -->
+      <section class="section" id="movie">
+        <div class="section-header">
+          <h2 class="section-title">MOVIE</h2>
+          <button class="section-cta">VIEW ALL</button>
+        </div>
+        <div class="movie-wrapper">
+          <div class="movie-thumb">
+            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d4?auto=format&fit=crop&w=1200&q=80" alt="Movie dummy" />
+            <div class="movie-play">
+              <div class="movie-play-circle"></div>
+              <div class="movie-play-icon"></div>
+            </div>
+          </div>
+          <p class="movie-caption">
+            ここにYouTubeや動画リンクを後で埋め込めるようにしておくダミーエリア。
+          </p>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="section-header">
+          <h2 class="section-title">CONTACT</h2>
+        </div>
+        <div class="contact-inner">
+          <p class="contact-text">
+            お問い合わせフォーム or XのDMリンク or メールアドレスなど、
+            後から好きな導線をここに入れられるようにしておく。
+          </p>
+          <button class="btn primary contact-btn">
+            CONTACT FORM（仮）
+          </button>
+        </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>© KOGURA LAB. All Rights Reserved.</p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
