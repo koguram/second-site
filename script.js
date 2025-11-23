@@ -40,3 +40,16 @@ links.forEach((link) => {
     });
   });
 });
+
+// ===== スクロールフェードアウト =====
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const maxFade = 300; // この値より下は完全に消える
+  const opacity = Math.max(0, 1 - scrollY / maxFade);
+
+  const fadeTargets = document.querySelectorAll(".fade-on-scroll");
+  fadeTargets.forEach(el => {
+    el.style.opacity = opacity;
+  });
+});
+
