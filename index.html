@@ -16,19 +16,23 @@
     <div class="blob blob-5"></div>
   </div>
 
-  <!-- ヘッダー / ナビ -->
+  <!-- ヘッダー / ナビ（黒ベース・白文字） -->
   <header class="site-header">
     <div class="header-inner">
       <a href="#top" class="brand">
         <span class="brand-main">KOGURA LAB</span>
-        <span class="brand-sub">HYPER GNON SITE</span>
       </a>
       <nav class="main-nav">
         <a href="#news">NEWS</a>
+        <span class="nav-sep">|</span>
         <a href="#live">LIVE</a>
+        <span class="nav-sep">|</span>
         <a href="#discography">DISCOGRAPHY</a>
+        <span class="nav-sep">|</span>
         <a href="#profile">PROFILE</a>
+        <span class="nav-sep">|</span>
         <a href="#movie">MOVIE</a>
+        <span class="nav-sep">|</span>
         <a href="#contact">CONTACT</a>
       </nav>
     </div>
@@ -37,31 +41,30 @@
   <!-- ページ全体（3Dチルト用ラッパ） -->
   <div class="page">
     <main>
-      <!-- HERO -->
+      <!-- HERO（ハンブレ風・写真でっかく） -->
       <section class="hero" id="top">
-        <div class="hero-overlay"></div>
-        <div class="hero-inner">
-          <p class="hero-kicker">EXPERIMENTAL WEB / LLM / LANDSCAPE VIBES</p>
-          <h1 class="hero-title">
-            常にぐにょぐにょ動き続ける、<br />
-            こくらくんの実験ポータル。
-          </h1>
-          <p class="hero-text">
-            ハンブレのオフィシャルサイト風レイアウトに、<br />
-            ネオンぐにょぐにょ背景をミックスした、個人ラボサイトのベース。
-          </p>
-          <div class="hero-actions">
-            <a href="#news" class="btn primary">NEWS</a>
-            <a href="#live" class="btn ghost">LIVE</a>
-          </div>
+        <div class="hero-image">
+          <!-- ここを自分の画像ファイル名に合わせてね -->
+          <img src="hero-main.jpg" alt="KOGURA main visual" />
         </div>
-        <div class="hero-scroll">
-          <span>SCROLL</span>
-          <div class="hero-scroll-line"></div>
+
+        <!-- 右下のタイトルカード（後で文言差し替えOK） -->
+        <div class="hero-card">
+          <p class="hero-label">NEW PORTAL</p>
+          <h1 class="hero-title">
+            こくらくん<br />
+            Hyper Lab Site
+          </h1>
+          <p class="hero-meta">2025 LAUNCH / LLM × LANDSCAPE × LIVE-KIDS</p>
+        </div>
+
+        <!-- 右端の縦書き SCROLL っぽいやつ -->
+        <div class="hero-scroll-rail">
+          <span class="hero-scroll-text">SCROLL</span>
         </div>
       </section>
 
-      <!-- NEWS -->
+      <!-- 以下は前のままのセクション構成（NEWS / LIVE / DISCO / PROFILE / MOVIE / CONTACT） -->
       <section class="section" id="news">
         <div class="section-header">
           <h2 class="section-title">NEWS</h2>
@@ -92,7 +95,6 @@
         </div>
       </section>
 
-      <!-- LIVE -->
       <section class="section" id="live">
         <div class="section-header">
           <h2 class="section-title">LIVE</h2>
@@ -143,7 +145,6 @@
         </div>
       </section>
 
-      <!-- DISCOGRAPHY -->
       <section class="section" id="discography">
         <div class="section-header">
           <h2 class="section-title">DISCOGRAPHY</h2>
@@ -189,7 +190,6 @@
         </div>
       </section>
 
-      <!-- PROFILE -->
       <section class="section" id="profile">
         <div class="section-header">
           <h2 class="section-title">PROFILE</h2>
@@ -211,7 +211,6 @@
         </div>
       </section>
 
-      <!-- MOVIE -->
       <section class="section" id="movie">
         <div class="section-header">
           <h2 class="section-title">MOVIE</h2>
@@ -231,14 +230,13 @@
         </div>
       </section>
 
-      <!-- CONTACT -->
       <section class="section" id="contact">
         <div class="section-header">
           <h2 class="section-title">CONTACT</h2>
         </div>
         <div class="contact-inner">
           <p class="contact-text">
-            お問い合わせフォーム or XのDMリンク or メールアドレスなど、
+            お問い合わせフォームやXのDMリンクなど、
             後から好きな導線をここに入れられるようにしておく。
           </p>
           <button class="btn primary contact-btn">
@@ -256,4 +254,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
