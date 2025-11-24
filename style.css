@@ -646,3 +646,10 @@ body {
   transition: opacity 0.3s ease;
   will-change: opacity;
 }
+
+.logo-img {
+  height: 32px; /* 好きなサイズに調整できる */
+  width: auto;
+  display: block;
+}
+
