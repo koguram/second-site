@@ -648,7 +648,7 @@ body {
 }
 
 .logo-img {
-  height: 32px; /* 好きなサイズに調整できる */
+  height: 96px; /* 好きなサイズに調整できる */
   width: auto;
   display: block;
 }
